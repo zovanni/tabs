@@ -1,0 +1,25 @@
+:root {
+    color-scheme: light;
+    --c-light: #eee;
+    --c-dark: #111;
+    --OnInverse: rgba(255, 255, 255, 1);
+    --Inverse: rgba(27, 33, 52, 1);
+    --InverseHover: rgba(52, 58, 78, 1);
+    --InverseActive: rgba(88, 93, 113, 1);
+    --Surface: rgba(255, 255, 255, 1);
+    --SurfaceHigh: rgba(241, 241, 247, 1); // e.g. neutral badge
+    --SurfacePositive: rgba(177, 255, 199, 1);
+    --SurfaceNegative: rgba(255, 191, 177, 1);
+    --SurfaceHover: rgba(246, 246, 250, 1);
+    --SurfaceActive: rgba(241, 241, 247, 1);
+    --Outline: rgba(211, 211, 220, 1);
+    --OutlineHover: rgba(196, 197, 207, 1);
+    --OnNeutral: rgba(27, 33, 52, 1);
+}
+
+//   background: var(--Inverse, rgba(27, 33, 52, 1));
+//   background: var(--InverseHover, rgba(52, 58, 78, 1));
+//   background: var(--InverseActive, rgba(88, 93, 113, 1));
+//   border: 1px solid var(--Outline, rgba(211, 211, 220, 1))
+//   border: 1px solid var(--OutlineHover, rgba(196, 197, 207, 1))
+//   border: 1px solid var(--Outline, rgba(211, 211, 220, 1))

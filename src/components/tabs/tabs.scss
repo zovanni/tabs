@@ -1,0 +1,29 @@
+.tabs {
+}
+
+.tabs__pills {
+    display: flex;
+    row-gap: spacing(2XS);
+    column-gap: spacing(2XS);
+    overflow-x: scroll;
+
+    padding: spacing(XL) 0;
+    .tabs--underline & {
+        column-gap: spacing(L);
+    }
+    @include breakpoint(sm) {
+        row-gap: spacing(XS);
+        column-gap: spacing(XS);
+        .tabs--underline & {
+            column-gap: spacing(XL) 0;
+        }
+    }
+    padding-left: 5px; // hack to not cut the outline whan pills are focused
+    padding-right: 5px; // hack to not cut the outline whan pills are focused
+}
+.tabs__tab {
+    display: none;
+    &--active {
+        display: block;
+    }
+}

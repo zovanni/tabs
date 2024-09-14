@@ -1,0 +1,95 @@
+.pill {
+    // margin: spacing(3XS) spacing(2XS); // handled in tabs component
+    flex-basis: fit-content;
+    flex-shrink: 0;
+    padding: 0 spacing(S);
+    $pillHeightMobile: 42px;
+    $pillHeight: 50px;
+    height: $pillHeightMobile;
+    min-width: $pillHeightMobile;
+    border-radius: $pillHeightMobile;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: var(--Surface);
+    border: 1px solid var(--Outline);
+    font-size: 12px;
+    position: relative;
+    // line-height: 150%;
+    font-weight: 575;
+
+    @include breakpoint(sm, min) {
+        // margin: spacing(4XS) spacing(3XS); // handled in tabs component
+        font-size: 14px;
+        height: $pillHeight;
+        min-width: $pillHeight;
+        border-radius: $pillHeight;
+    }
+    &:hover {
+        background-color: var(--SurfaceHover);
+        border: 1px solid var(--OutlineHover);
+    }
+    &:active {
+        background-color: var(--SurfaceActive);
+        border: 1px solid var(--Outline);
+    }
+    &:focus {
+        background-color: var(--Surface);
+        outline: 2px solid var(--Inverse);
+        outline-offset: 2px;
+    }
+
+    &--selected {
+        color: var(--OnInverse);
+        background-color: var(--Inverse);
+        border: 1px solid transparent;
+        &:hover {
+            background-color: var(--InverseHover);
+            border: 1px solid transparent;
+        }
+        &:active {
+            background-color: var(--InverseActive);
+            border: 1px solid transparent;
+        }
+        &:focus {
+            background-color: var(--Inverse);
+        }
+    }
+
+    .tabs--underline & {
+        color: var(--OnNeutral);
+        border-radius: spacing(2XS);
+        border-color: transparent;
+        padding: spacing(4XS);
+
+        background-color: transparent;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 3px;
+            left: spacing(4XS);
+            right: spacing(4XS);
+            bottom: 0;
+            border-radius: 3px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            &::after {
+                background-color: var(--OutlineHover);
+            }
+        }
+        &--selected {
+            &:focus {
+                &::after {
+                    background-color: var(--OnNeutral);
+                }
+            }
+            &::after {
+                background-color: var(--OnNeutral);
+            }
+        }
+    }
+}

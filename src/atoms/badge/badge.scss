@@ -1,0 +1,24 @@
+.badge {
+    background-color: var(--SurfaceHigh);
+    font-size: 12px;
+    line-height: 18px;
+    line-height: 150%;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 8px;
+    padding: spacing(4XS) spacing(3XS);
+    margin-left: spacing(2XS);
+    @include breakpoint(sm) {
+        border-radius: 26px;
+        padding: spacing(3XS) spacing(2XS);
+    }
+
+    &--positive {
+        background-color: var(--SurfacePositive);
+    }
+    &--negative {
+        background-color: var(--SurfaceNegative);
+    }
+}
