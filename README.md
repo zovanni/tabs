@@ -11,9 +11,6 @@
 # This project use `pnpm` as package manager, but you can use also `npm` or `yarn`.
 pnpm install
 
-# And run the project
-pnpm dev
-
-# Optional: Run Storybook
+# Run Storybook
 pnpm storybook
 ```
