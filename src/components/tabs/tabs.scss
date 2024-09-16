@@ -8,6 +8,8 @@
     overflow-x: scroll;
 
     padding: spacing(XL) 0;
+    padding-left: 5px; // hack adjust padding to not to not cut the outline whan pills are focused
+    padding-right: 5px; // ''
     .tabs--underline & {
         column-gap: spacing(L);
     }
@@ -18,8 +20,6 @@
             column-gap: spacing(XL) 0;
         }
     }
-    padding-left: 5px; // hack to not cut the outline whan pills are focused
-    padding-right: 5px; // hack to not cut the outline whan pills are focused
 }
 .tabs__tab {
     display: none;

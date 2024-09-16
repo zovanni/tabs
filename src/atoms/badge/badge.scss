@@ -10,6 +10,7 @@
     border-radius: 8px;
     padding: spacing(4XS) spacing(3XS);
     margin-left: spacing(2XS);
+    color: var(--Inverse);
     @include breakpoint(sm) {
         border-radius: 26px;
         padding: spacing(3XS) spacing(2XS);

@@ -15,5 +15,6 @@ export const Primary = {
     name: 'Badge',
     args: {
         label: 'Badge',
+        variant: 'positive',
     },
 };

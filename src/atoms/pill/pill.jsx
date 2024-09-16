@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import classNames from "classnames";
 import { Badge } from "../badge/badge";
 
 const Pill = ({
-    variant,
+    //variant, // handled with parent class on Tabs component
     label,
     selected,
     badge,
@@ -13,7 +13,7 @@ const Pill = ({
     aria_selected
 }) => {
     const mainClass = "pill";
-    console.log(key, id)
+    // console.log(key, id)
     return (
         <button
             aria-selected={aria_selected}

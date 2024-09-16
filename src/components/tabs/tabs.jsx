@@ -14,6 +14,7 @@ const Tab = ({ content, active, pill }, props) => {
                 [`${mainClass}`]: true,
                 [`${mainClass}--active`]: !!active,
             })}
+            {...props}
         >
             {content}
         </div>
